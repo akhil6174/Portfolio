@@ -1,0 +1,239 @@
+/* Base Styles */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8vh;
+    margin: 10vh 8vw;
+    padding-bottom: 1rem;
+}
+
+.contact-title {
+    position: relative;
+}
+
+.contact-title h1 {
+    padding: 0px 3vw;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.contact-title img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact-section {
+    display: flex;
+    gap: 5vw;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    width: 38vw;
+}
+
+.contact-left h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(270deg, rgb(189, 101, 33) 80%, rgb(96, 85, 44) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+    color: antiquewhite;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.img path{
+    fill: aquamarine;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    color: antiquewhite;
+    font-size: 2rem;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.social-media-handels {
+    gap: 2.5vw;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.social-media-handels img:hover {
+    border: 0.1rem solid rgb(242, 151, 77);
+    border-radius: 0.8rem;
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3.3vh;
+    width: 40vw;
+}
+
+.contact-right label {
+    color: antiquewhite;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-right input {
+    border: none;
+    width: 38.5vw;
+    height: 10vh;
+    color: rgb(40, 26, 17);
+    padding-left: 1vw;
+    border-radius: 0.3rem;
+    background: rgb(155, 155, 158);
+    font-size: 1.2rem;
+}
+
+.contact-right textarea {
+    width: 38.5vw;
+    border: none;
+    padding: 2%;
+    border-radius: 0.3rem;
+    background-color: rgb(155, 155, 158);
+    color: rgb(40, 26, 17);
+    font-size: 1.2rem;
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 4rem;
+    background: linear-gradient(280deg, rgb(189, 101, 33) 0%, rgb(96, 85, 44) 100%);
+    font-size: 1.5rem;
+    padding: 3vh 4vw;
+    margin-bottom: 4vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit_and_result{
+    gap: 1.2rem;
+    display: flex;
+
+}
+.submit_and_result img{
+    margin-bottom: 3.8vh;
+}
+.contact-submit:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .contact {
+        margin: 8vh 6vw;
+        gap: 7vh;
+    }
+
+    .contact-title h1 {
+        font-size: 3.5rem;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+
+    .contact-left, .contact-right {
+        width: 90%;
+    }
+
+    .contact-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-details {
+        font-size: 1.8rem;
+    }
+
+    .contact-right input, .contact-right textarea {
+        width: 88%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin: 7vh 4vw;
+        gap: 6vh;
+    }
+
+    .contact-title h1 {
+        font-size: 3rem;
+    }
+
+    .contact-left h1 {
+        font-size: 2rem;
+    }
+
+    .contact-details {
+        font-size: 1.6rem;
+    }
+
+    .contact-right input, .contact-right textarea {
+        width: 86%;
+    }
+
+    .contact-submit {
+        font-size: 1.4rem;
+        padding: 2.5vh 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        margin: 6vh 2vw;
+        gap: 5vh;
+    }
+
+    .contact-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-details {
+        font-size: 1.4rem;
+    }
+
+    .contact-right label {
+        font-size: 1.2rem;
+    }
+
+    .contact-right input, .contact-right textarea {
+        width: 84%;
+        font-size: 1rem;
+    }
+
+    .contact-submit {
+        font-size: 1.2rem;
+        padding: 2vh 2.5vw;
+    }
+}
