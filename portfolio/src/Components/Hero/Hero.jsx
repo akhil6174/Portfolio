@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 function Hero() {
     const handleDownloadResume = () => {
       const link = document.createElement('a');
-      link.href = '../../my_resume.pdf'; // Replace with the correct path
+      link.href = '/resume.pdf'; // Replace with the correct path
       link.download = 'akhilendra_dwivedi.pdf'; // Replace with the desired file name
       link.click();
   }
