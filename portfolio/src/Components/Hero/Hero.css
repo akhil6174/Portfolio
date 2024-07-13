@@ -1,4 +1,3 @@
-/* Base Styles */
 .hero {
     display: flex;
     align-items: center;
@@ -11,23 +10,21 @@
     height: 35vh;
     width: auto;
     border-radius: 50%;
-    /* border: 3px solid transparent; Transparent border */
     position: relative;
     animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 2px 2px rgb(96, 85, 44), 0 0 2px 5px rgb(189, 101, 33); /* Reduced spread radius for glow effect */
+        box-shadow: 0 0 2px 2px rgb(96, 85, 44), 0 0 2px 5px rgb(189, 101, 33); 
     }
     50% {
-        box-shadow: 0 0 8px 5px rgb(96, 85, 44), 0 0 10px 7px rgb(189, 101, 33); /* Adjusted glow effect */
+        box-shadow: 0 0 8px 5px rgb(96, 85, 44), 0 0 10px 7px rgb(189, 101, 33); 
     }
     100% {
-        box-shadow: 0 0 2px 2px rgb(96, 85, 44), 0 0 2px 5px rgb(189, 101, 33); /* Reset to original glow */
+        box-shadow: 0 0 2px 2px rgb(96, 85, 44), 0 0 2px 5px rgb(189, 101, 33); 
     }
 }
-
 
 .hero h1 {
     text-align: center;
@@ -59,21 +56,26 @@
     font-weight: 500;
 }
 
-.hero-connect {
+.hero-connect, .hero-resume {
     min-height: 5vh;
     padding: 2.2vh 2.5vw;
     border-radius: 50rem;
-    background: linear-gradient(280deg, rgb(189, 101, 33), rgb(96, 85, 44));
     cursor: pointer;
+    box-sizing: border-box;
+    font-size: 3vh; 
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: borderAnimation 2s infinite linear; 
+}
+
+.hero-connect {
+    background: linear-gradient(280deg, rgb(189, 101, 33), rgb(96, 85, 44));
 }
 
 .hero-resume {
-    min-height: 5vh;
-    padding: 2.2vh 2.5vw;
-    border-radius: 50rem;
     border: 2px solid white;
-    cursor: pointer;
-    box-sizing: border-box;
 }
 
 .hero-connect:hover {
@@ -84,7 +86,24 @@
     border-color: #f6cadc;
 }
 
-/* Responsive Styles */
+@keyframes borderAnimation {
+    0% {
+        border-color: rgb(189, 101, 33);
+    }
+    25% {
+        border-color: rgb(96, 85, 44);
+    }
+    50% {
+        border-color: #f6cadc;
+    }
+    75% {
+        border-color: white;
+    }
+    100% {
+        border-color: rgb(189, 101, 33);
+    }
+}
+
 @media (max-width: 1024px) {
     .hero img {
         height: 30vh;
