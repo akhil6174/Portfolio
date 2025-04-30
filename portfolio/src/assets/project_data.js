@@ -10,7 +10,7 @@ const projectData = [
         p_no:1,
         p_name:"Web design",
         p_img:project1_img,
-        p_link:'https://gemai-three.vercel.app/'
+        p_link:'https://ai-trip-planner-eosin.vercel.app/create-trip'
     },
     {
         p_no:2,
@@ -22,7 +22,7 @@ const projectData = [
         p_no:3,
         p_name:"Web design",
         p_img:project3_img,
-        p_link:"https://github.com/akhil6174/movie_recomm.sys"
+        p_link:"https://gemai-three.vercel.app/"
     },
     {
         p_no:4,
