@@ -10,7 +10,7 @@ const projectData = [
         p_no:1,
         p_name:"Web design",
         p_img:project1_img,
-        p_link:'https://ai-trip-planner-eosin.vercel.app/create-trip'
+        p_link:'https://ai-trip-planner-eosin.vercel.app/'
     },
     {
         p_no:2,
